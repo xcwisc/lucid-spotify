@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "extensions": [
+    {
+      "name": "spotify",
+      "title": "spotify",
+      "products": [
+        "chart",
+        "spark",
+        "teamspaces"
+      ],
+      "codePath": "editorextensions/spotify/bin/extension.js",
+      "scopes": [
+        "READ",
+        "WRITE",
+        "DOWNLOAD",
+        "SHOW_MODAL",
+        "CUSTOM_UI",
+        "NETWORK",
+        "OAUTH_TOKEN"
+      ]
+    }
+  ],
+  "shapeLibraries": [],
+  "oauthProviders": [
+    {
+      "name": "spotify",
+      "title": "spotify",
+      "authorizationUrl": "https://accounts.spotify.com/authorize",
+      "tokenUrl": "https://accounts.spotify.com/api/token",
+      "scopes": ["streaming", "user-read-email", "user-read-private"],
+      "domainWhitelist": ["https://accounts.spotify.com"],
+      "clientAuthentication": "clientParameters"
+    }
+  ]
+}
